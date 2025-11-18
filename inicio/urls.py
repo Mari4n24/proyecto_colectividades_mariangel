@@ -3,5 +3,6 @@ from inicio.views import *
 
 urlpatterns = [
     path('', inicio),
-    path('crear-colectividad/<nombre>/<pais>/', crear_colectividad)
+    path('crear-colectividad/<nombre>/<pais>/', crear_colectividad),
+    path('listar-colectividades/', listar_colectividades),
 ]

@@ -10,3 +10,9 @@ def crear_colectividad(request, nombre, pais):
     colectividades.save()
     
     return render(request, 'crear_colectividad.html', {'colectividad_guardada': colectividades})
+
+def listar_colectividades(request):
+    
+    cant_colectividades = Colectividad.objects.all()
+    
+    return render(request, 'listar_colectividades.html' , {'listado_de_colectividades': cant_colectividades})

@@ -7,6 +7,13 @@
 </head>
 <body>
     <h1>Listado de Colectividades</h1>
-    <h2> {{listado_de_colectividades}} </h2>
+    <ul>  
+        {% for colectividades in listado_de_colectividades %}
+        
+        <li> 
+            {{colectividades}}
+        </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

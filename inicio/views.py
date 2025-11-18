@@ -9,4 +9,4 @@ def crear_colectividad(request, nombre, pais):
     colectividades = Colectividad(nombre=nombre, pais=pais)
     colectividades.save()
     
-    return render(request, 'crear_colectividad.html')
+    return render(request, 'crear_colectividad.html', {'colectividad_guardada': colectividades})
